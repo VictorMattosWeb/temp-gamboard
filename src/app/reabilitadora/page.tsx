@@ -1,18 +1,17 @@
 "use client";
-import ContainerUI from "@/components/UI/container";
+
 import Widgets from "@/components/widgets";
 import Container from "@/components/widgets/page/container";
 import { containerProps } from "@/constants/container";
-import Image from "next/image";
-import { descriptors, descriptorsProps } from "@/constants/descriptors";
+import { ReabilitadoraProps, reabilitadora } from "@/constants/reabilitadora";
 
-export default function Home() {
+export default function Reabilitadora() {
   return (
     <>
       <Container {...containerProps}>
         <Widgets
-          descriptors={descriptors}
-          descriptorsProps={descriptorsProps}
+          descriptors={reabilitadora}
+          descriptorsProps={ReabilitadoraProps}
         />
       </Container>
     </>
