@@ -3,7 +3,7 @@ import React, { memo } from "react";
 import { motion } from "framer-motion";
 import DynamicMotion from "../UI/dynamicMotion";
 
-const Widgets: React.FC<any> = ({ descriptors, descriptorsProps }) => {
+const WidgetsComponent: React.FC<any> = ({ descriptors, descriptorsProps }) => {
   return (
     Object.entries(descriptors) as [
       string,
@@ -14,58 +14,63 @@ const Widgets: React.FC<any> = ({ descriptors, descriptorsProps }) => {
     let children: Record<any, React.FC<any>> | undefined;
     let props: Record<any, any>;
 
-    console.log({ id, value });
-
     if (typeof value === "object") {
       Component = value.Component;
       children = value.children;
       props = descriptorsProps[id].props;
       if (props?.animation) {
         const CurrentComponent = value.Component;
-        Component = (currentProps: any) => (
+        const MyComponent = (currentProps: any) => (
           <DynamicMotion {...props.animation}>
             <CurrentComponent {...currentProps}></CurrentComponent>
           </DynamicMotion>
         );
+        Component = MyComponent;
       }
     } else {
       Component = value;
       props = descriptorsProps[id];
       if (props?.animation) {
         const CurrentComponent = value;
-        Component = (currentProps: any) => (
+        const MyComponent = (currentProps: any) => (
           <DynamicMotion {...props.animation}>
             <CurrentComponent {...currentProps}></CurrentComponent>
           </DynamicMotion>
         );
+        Component = MyComponent;
       }
     }
-    console.log(props);
 
     if (!Component) {
       return null;
     }
 
     return (
-      <Component {...props}>
+      <Component key={id} {...props}>
         {children &&
           Object.entries(children).map(([childrenId, value]) => {
             let ChildrenComponent: any = value;
             const childrenProps = descriptorsProps[id][childrenId];
             if (childrenProps?.animation) {
               const CurrentComponent = value;
-              ChildrenComponent = (currentProps: any) => (
+              const MyChildrenComponent = (currentProps: any) => (
                 <DynamicMotion {...childrenProps.animation}>
                   <CurrentComponent {...currentProps}></CurrentComponent>
                 </DynamicMotion>
               );
+              ChildrenComponent = MyChildrenComponent;
             }
 
-            return <ChildrenComponent {...childrenProps} />;
+            return (
+              <ChildrenComponent
+                key={`${id} ${childrenId}`}
+                {...childrenProps}
+              />
+            );
           })}
       </Component>
     );
   });
 };
 
-export default memo(Widgets);
+export const Widgets: React.FC<any> = memo(WidgetsComponent);

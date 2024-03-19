@@ -1,6 +1,6 @@
 "use client";
 
-import Widgets from "@/components/widgets";
+import { Widgets } from "@/components/widgets";
 import Container from "@/components/widgets/page/container";
 import { containerProps } from "@/constants/container";
 import { EsteticaProps, estetica } from "@/constants/estetica";

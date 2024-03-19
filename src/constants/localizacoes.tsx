@@ -101,7 +101,7 @@ export const LocalizacoesProps: Record<LocalWidgetsName, any> = {
         },
       },
       tag: "h2",
-      text: "Le Doc Odontologia - Paulista",
+      text: "Clínica Odontológica - Itaim",
       className:
         "bg-transparent text-sm py-0 font-medium text-lg text-[#B79E82]  mx-auto text-nowrap",
     },
@@ -114,7 +114,7 @@ export const LocalizacoesProps: Record<LocalWidgetsName, any> = {
         },
       },
       tag: "p",
-      text: "Rua Cincinato Braga, N° 321 - Conjunto 82 - Bela Vista - São Paulo - SP",
+      text: "Rua Dr. Renato Paes de Barros, 512, Itaim Bibi, São Paulo, SP - 04530-000",
       className:
         "flex gap-2 mx-auto md:max-w-[300px] md:px-0 bg-transparent text-sm text-[#B79E82] py-0",
       leftIcon: <FaMapPin />,
@@ -134,7 +134,7 @@ export const LocalizacoesProps: Record<LocalWidgetsName, any> = {
         },
       },
       text: "Contato",
-      link: "https://api.whatsapp.com/message/2SECP4QI7REPK1?autoload=1&app_absent=0",
+      link: "https://wa.me/message/MXUJOJZ3VCQJI1",
       className:
         "bg-[#B79E82] w-[300px] h-10 text-md text-white shadow-md font-medium rounded-md flex items-center justify-center",
     },

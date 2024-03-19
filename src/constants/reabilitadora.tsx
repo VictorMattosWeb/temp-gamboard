@@ -111,7 +111,7 @@ export const ReabilitadoraProps: Record<ReabilitadoraWidgetsName, any> = {
         },
       },
       text: "Contato",
-      link: "https://api.whatsapp.com/message/2SECP4QI7REPK1?autoload=1&app_absent=0",
+      link: "https://wa.me/message/MXUJOJZ3VCQJI1",
       className:
         "bg-[#B79E82] w-[300px] h-10 text-md text-white shadow-md font-medium rounded-md flex items-center justify-center",
     },
