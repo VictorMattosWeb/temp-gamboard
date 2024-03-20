@@ -42,8 +42,6 @@ export const EsteticaProps: Record<EsteticaWidgetsName, any> = {
   reabilitadoraPage: {
     animation: slideInAnimation,
     items: [
-      "Facetas em Resina",
-      "Harmonização",
       "Toxina Botulínica - Botox",
       "Preenchimento com Ácido Hialurônico",
       "Microagulhamento com Ativos",
