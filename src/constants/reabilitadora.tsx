@@ -61,7 +61,7 @@ export const ReabilitadoraProps: Record<ReabilitadoraWidgetsName, any> = {
     tag: "h1",
     text: "Odontologia Reabilitadora",
     className:
-      "mx-auto bg-transparent text-nowrap text-[#B79E82] font-medium text-lg",
+      "mx-auto bg-transparent text-nowrap w-full text-[#B79E82] font-medium text-lg",
   },
   // Lista com os conteúdos
   reabilitadoraPage: {
