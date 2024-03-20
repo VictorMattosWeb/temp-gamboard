@@ -52,7 +52,7 @@ export const LocalizacoesProps: Record<LocalWidgetsName, any> = {
     animation: fadeInAnimation,
     tag: "h1",
     text: "Localizações",
-    className: "text-center bg-transparent text-[#B79E82] font-medium text-lg",
+    className: "text-center bg-transparent text-[#B79E82] font-medium text-md",
   },
   // Endereço 01
   EndUm: {
@@ -70,7 +70,7 @@ export const LocalizacoesProps: Record<LocalWidgetsName, any> = {
       tag: "h2",
       text: "Takashi Odontologia - Pinheiros",
       className:
-        "bg-transparent mx-auto text-nowrap text-sm py-0 font-medium text-lg text-[#B79E82]",
+        "bg-transparent mx-auto text-nowrap text-sm py-0 font-medium text-md text-[#B79E82]",
     },
     rua: {
       animation: {
@@ -103,7 +103,7 @@ export const LocalizacoesProps: Record<LocalWidgetsName, any> = {
       tag: "h2",
       text: "Clínica Odontológica - Itaim",
       className:
-        "bg-transparent text-sm py-0 font-medium text-lg text-[#B79E82]  mx-auto text-nowrap",
+        "bg-transparent text-sm py-0 font-medium text-md text-[#B79E82]  mx-auto text-nowrap",
     },
     rua: {
       animation: {
