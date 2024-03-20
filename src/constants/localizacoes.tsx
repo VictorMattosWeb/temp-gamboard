@@ -70,7 +70,7 @@ export const LocalizacoesProps: Record<LocalWidgetsName, any> = {
       tag: "h2",
       text: "Takashi Odontologia - Pinheiros",
       className:
-        "bg-transparent mx-auto text-nowrap py-0 font-medium text-md text-[#B79E82]",
+        "bg-transparent mx-auto text-nowrap py-0 font-medium w-full text-md text-[#B79E82]",
     },
     rua: {
       animation: {
@@ -103,7 +103,7 @@ export const LocalizacoesProps: Record<LocalWidgetsName, any> = {
       tag: "h2",
       text: "Clínica Odontológica - Itaim",
       className:
-        "bg-transparent py-0 font-medium text-md text-[#B79E82]  mx-auto text-nowrap",
+        "bg-transparent py-0 font-medium text-md text-[#B79E82] w-full mx-auto text-nowrap",
     },
     rua: {
       animation: {
