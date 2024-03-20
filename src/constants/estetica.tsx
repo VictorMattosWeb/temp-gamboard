@@ -36,7 +36,8 @@ export const EsteticaProps: Record<EsteticaWidgetsName, any> = {
     animation: fadeInAnimation,
     tag: "h1",
     text: "Odontologia Estética",
-    className: "text-center bg-transparent text-[#B79E82] font-medium text-lg",
+    className:
+      "text-center text-nowrap bg-transparent text-[#B79E82] font-medium text-lg",
   },
   // Lista com os conteúdos
   reabilitadoraPage: {

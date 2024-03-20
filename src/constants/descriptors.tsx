@@ -49,8 +49,8 @@ export const descriptorsProps: Record<Descriptors, any> = {
   fotoPerfil: {
     src: "/img/fotoPerfil.webp",
     alt: "Imagem de Perfil",
-    width: "100",
-    height: "100",
+    width: "150",
+    height: "150",
     className: "rounded-full border-4 border-[#B79E82]",
     animation: {
       initial: {
