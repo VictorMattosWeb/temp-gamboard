@@ -2,12 +2,10 @@
 
 import Image from "@/components/widgets/background/image";
 import Button from "@/components/widgets/button/button";
-import List from "@/components/widgets/list/list";
 import Container from "@/components/widgets/page/container";
 import Typography from "@/components/widgets/typography";
 import { FaMapPin } from "react-icons/fa6";
 import { fadeInAnimation, slideInAnimation } from "./animation";
-import { delay } from "framer-motion";
 
 export const localizacoes = {
   logo: Image,
