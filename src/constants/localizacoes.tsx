@@ -24,6 +24,13 @@ export const localizacoes = {
       rua: Typography,
     },
   },
+  EndTres: {
+    Component: Container,
+    children: {
+      titulo: Typography,
+      rua: Typography,
+    },
+  },
   containerButton: {
     Component: Container,
     children: {
@@ -113,6 +120,38 @@ export const LocalizacoesProps: Record<LocalWidgetsName, any> = {
       },
       tag: "p",
       text: "Rua Dr. Renato Paes de Barros, 512, Itaim Bibi, São Paulo, SP - 04530-000",
+      className:
+        "flex gap-2 mx-auto md:max-w-[300px] md:px-0 bg-transparent text-sm text-[#B79E82] py-0",
+      leftIcon: <FaMapPin />,
+    },
+  },
+  EndTres: {
+    props: {
+      className: "gap-2 ",
+    },
+    titulo: {
+      animation: {
+        ...slideInAnimation,
+        transition: {
+          ...slideInAnimation.transition,
+          delay: 0.2,
+        },
+      },
+      tag: "h2",
+      text: "Odontológica Dental Saúde - Vila Yara",
+      className:
+        "bg-transparent py-0 font-medium text-md text-[#B79E82] w-full mx-auto text-nowrap",
+    },
+    rua: {
+      animation: {
+        ...slideInAnimation,
+        transition: {
+          ...slideInAnimation.transition,
+          delay: 0.4,
+        },
+      },
+      tag: "p",
+      text: "R. Anselmo Pedro Medeiros, 67 Osasco, Sao Paulo, 06028-030",
       className:
         "flex gap-2 mx-auto md:max-w-[300px] md:px-0 bg-transparent text-sm text-[#B79E82] py-0",
       leftIcon: <FaMapPin />,
