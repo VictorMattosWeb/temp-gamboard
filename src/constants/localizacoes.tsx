@@ -138,7 +138,7 @@ export const LocalizacoesProps: Record<LocalWidgetsName, any> = {
         },
       },
       tag: "h2",
-      text: "Odontológica Dental Saúde - Vila Yara",
+      text: "Clínica Dental Saúde - Vila Yara",
       className:
         "bg-transparent py-0 font-medium text-md text-[#B79E82] w-full mx-auto text-nowrap",
     },
